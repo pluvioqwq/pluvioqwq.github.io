@@ -14,9 +14,9 @@ timezone: Asia/Singapore
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: pluvioqwq's blog # the main title
+title: qwqful's blog # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the sub-title
+tagline:  # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   "Hello World"
