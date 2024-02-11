@@ -187,4 +187,4 @@ cat car.py
 
 By doing this, we are able to get Root Permission and get the flag
 
-![](/assets/img/tiny/privilege escalation.png)
+![](/assets/img/tiny/privilege_escalation.png)
