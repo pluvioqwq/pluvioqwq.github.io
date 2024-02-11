@@ -56,7 +56,7 @@ We can see that 80, 22 and 8888 ports are opened
 
 # Add Hosts
 
-![[/assets/img/tiny/website.png]]
+![](/assets/img/tiny/website.png)
 
 We are able to see that the website is loading contents in domain tiny.hmv, and hence we need to add the domain into /etc/hosts , so that it can resolve properly (virtual hosting).
 
@@ -82,7 +82,7 @@ We are able to find that there is a subdomain which is called "wish.tiny.hmw"
 
 Check whether the website is vulnerable to sqli(sql injection)
 
-![[/assets/img/tiny/burp.png]]
+![](/assets/img/tiny/burp.png)
 
 It appears that Sqli is existed on the website and there we use sqlmap to enumerate the user and the password in the database:
 
@@ -110,7 +110,7 @@ Table: admin
 
 Logging into the website and using wpscan, we can detect that the website is vulnerable to  [CVE-2023-5201](https://github.com/advisories/GHSA-52wg-h24c-3wgr), which we can do Remote Code Execution.
 
-![[/assets/img/tiny/wordpress_cve.png]]
+![](/assets/img/tiny/wordpress_cve.png)
 
 We listen to port 1234 by using nc (netcat) and get the shell
 
@@ -132,9 +132,9 @@ ss -tulnp
 ps -elf 
 ```
 
-![[/assets/img/tiny/ps.png]]
+![](/assets/img/tiny/ps.png)
 
-![[/assets/img/tiny/ss.png]]
+![](/assets/img/tiny/ss.png)
 
 We can see that TinyProxy is running
 
@@ -144,7 +144,7 @@ By accessing  /etc/tinyproxy/tinyproxy.conf, we can the configurations
 cat /etc/tinyproxy/tinyproxy.conf | grep -v "#"
 ```
 
-![[/assets/img/tiny/config.png]]
+![](/assets/img/tiny/config.png)
 
 From that, we can see that port 1111 is opened, and all traffic is being directed to "localhost:1111"
 
@@ -171,11 +171,11 @@ ssh -i id_rsa vic@127.0.0.1
 
  After accessing user "vic", we are able to get our first flag.
 
-![[/assets/img/tiny/user_flag.png]]
+![](/assets/img/tiny/user_flag.png)
 
 By doing sudo -l, we can see that we can use sudo command to execute /opt/car.py
 
-![[/assets/img/tiny/permissions.png]]
+![](/assets/img/tiny/permissions.png)
 
 We see what it is contained in "car.py" file and we can see "pydash lib", which we can find a Command Injection vulnerability  
 
@@ -183,8 +183,8 @@ We see what it is contained in "car.py" file and we can see "pydash lib", which 
 cat car.py
 ```
 
-![[/assets/img/tiny/car_py_content.png]]
+![](/assets/img/tiny/car_py_content.png)
 
 By doing this, we are able to get Root Permission and get the flag
 
-![[/assets/img/tiny/privilege escalation.png]]
+![](/assets/img/tiny/privilege escalation.png)
