@@ -4,11 +4,9 @@ date: 2024-02-11
 categories:
   - Writeups
 tags:
-  - Linux
   - Sql_injection
   - Wordpress
-  - Enumeration
-  - PrivEsc
+  - Privilege_Escalation
 ---
 
 # Arp-scan 
@@ -80,7 +78,7 @@ We are able to find that there is a subdomain which is called "wish.tiny.hmw"
 
 # Sql injection
 
-Check whether the website is vulnerable to sqli(sql injection)
+Check whether the website is vulnerable to sqli (sql injection)
 
 ![](/assets/img/tiny/burp.png)
 
