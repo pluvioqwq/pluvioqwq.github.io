@@ -16,7 +16,7 @@ timezone: Asia/Singapore
 
 title: qwqful's blog # the main title
 
-tagline:  # it will display as the sub-title
+tagline: Notes && Writeups # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   "Hello World"
