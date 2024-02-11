@@ -13,7 +13,7 @@ tags:
 
 # Arp-scan 
 
- Detecting the ip of the machine
+ Detecting the IP of the machine
 
 ```bash
 192.168.1.97	08:00:27:ee:8a:18	PCS Systemtechnik GmbH
@@ -56,9 +56,9 @@ We can see that 80, 22 and 8888 ports are opened
 
 # Add Hosts
 
-![[website.png]]
+![[/assets/img/tiny/website.png]]
 
-We are able to see that the website is loading contents in domain tiny.hmv, and hence we need to add the domain into /etc/hosts, so that it can resolve properly (virtual hosting).
+We are able to see that the website is loading contents in domain tiny.hmv, and hence we need to add the domain into /etc/hosts , so that it can resolve properly (virtual hosting).
 
 ```shell
 echo "192.168.1.97  tiny.hmv" >> /etc/hosts
@@ -82,9 +82,9 @@ We are able to find that there is a subdomain which is called "wish.tiny.hmw"
 
 Check whether the website is vulnerable to sqli(sql injection)
 
-![[burp.png]]
+![[/assets/img/tiny/burp.png]]
 
-It appears that Sqli is existed in the website and there we use sqlmap to enumerate the user and the password in the database:
+It appears that Sqli is existed on the website and there we use sqlmap to enumerate the user and the password in the database:
 
 ```shell
 sqlmap -r req.req --batch -D wish_db -T admin -C id,password,username --dump 
@@ -110,7 +110,7 @@ Table: admin
 
 Logging into the website and using wpscan, we can detect that the website is vulnerable to  [CVE-2023-5201](https://github.com/advisories/GHSA-52wg-h24c-3wgr), which we can do Remote Code Execution.
 
-![[wordpress_cve.png]]
+![[/assets/img/tiny/wordpress_cve.png]]
 
 We listen to port 1234 by using nc (netcat) and get the shell
 
@@ -125,16 +125,16 @@ Upgrading simple shells to fully interactive TTYs
 export TERM=xterm
 ```
 
-Referring the port scanning result earlier, we notice that port 8888 is opened as well and yet to be used, hence we can do a smart assumption.
+Referring to the port scanning result earlier, we notice that port 8888 is opened as well and yet to be used, hence we can make a smart assumption.
 
 ```shell
 ss -tulnp
 ps -elf 
 ```
 
-![[ps.png]]
+![[/assets/img/tiny/ps.png]]
 
-![[ss.png]]
+![[/assets/img/tiny/ss.png]]
 
 We can see that TinyProxy is running
 
@@ -144,11 +144,11 @@ By accessing  /etc/tinyproxy/tinyproxy.conf, we can the configurations
 cat /etc/tinyproxy/tinyproxy.conf | grep -v "#"
 ```
 
-![[config.png]]
+![[/assets/img/tiny/config.png]]
 
-From that we can see that port 1111 is opened, and all traffic is being directed to "localhost:1111"
+From that, we can see that port 1111 is opened, and all traffic is being directed to "localhost:1111"
 
-If all the traffics are being directed to port 1111, we can make an assumption and listen to port 1111 by using "nc", from the response we can see that "Get http://127.0.0.1:8000/id_rsa".
+If all the traffics is being directed to port 1111, we can make an assumption and listen to port 1111 by using "nc", from the response we can see that "Get http://127.0.0.1:8000/id_rsa".
 
 Hence we can do a redirection of traffic from port 1111 to 8000 by using "Socat" 
 
@@ -158,7 +158,7 @@ socat -v tcp-listen:1111;reuseaddr tcp:localhost:8000
 
 and hence we are able to get the private key, saving and naming it as "id_rsa"
 
-![[private_key.png]]
+![[/assets/img/tiny/private_key.png]]
 
 granting "id_rsa" with 600 permission and we connect user vic by using "id_rsa" via ssh
 
@@ -171,11 +171,11 @@ ssh -i id_rsa vic@127.0.0.1
 
  After accessing user "vic", we are able to get our first flag.
 
-![[user_flag.png]]
+![[/assets/img/tiny/user_flag.png]]
 
 By doing sudo -l, we can see that we can use sudo command to execute /opt/car.py
 
-![[permissions.png]]
+![[/assets/img/tiny/permissions.png]]
 
 We see what it is contained in "car.py" file and we can see "pydash lib", which we can find a Command Injection vulnerability  
 
@@ -183,8 +183,8 @@ We see what it is contained in "car.py" file and we can see "pydash lib", which 
 cat car.py
 ```
 
-![[car_py_content.png]]
+![[/assets/img/tiny/car_py_content.png]]
 
 By doing this, we are able to get Root Permission and get the flag
 
-![[privilege escalation.png]]
+![[/assets/img/tiny/privilege escalation.png]]
