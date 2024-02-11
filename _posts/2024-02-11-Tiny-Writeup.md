@@ -156,7 +156,7 @@ socat -v tcp-listen:1111;reuseaddr tcp:localhost:8000
 
 and hence we are able to get the private key, saving and naming it as "id_rsa"
 
-![[/assets/img/tiny/private_key.png]]
+![](/assets/img/tiny/private_key.png)
 
 granting "id_rsa" with 600 permission and we connect user vic by using "id_rsa" via ssh
 
