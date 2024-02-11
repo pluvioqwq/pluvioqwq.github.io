@@ -1,5 +1,5 @@
 ---
-title: Tiny HackMyVM Writeup
+title: Tiny Writeup
 date: 2024-02-11
 categories:
   - Writeups
