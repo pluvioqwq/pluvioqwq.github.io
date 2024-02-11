@@ -148,7 +148,7 @@ From that, we can see that port 1111 is opened, and all traffic is being directe
 
 If all the traffics is being directed to port 1111, we can make an assumption and listen to port 1111 by using "nc", from the response we can see that "Get http://127.0.0.1:8000/id_rsa".
 
-Hence we can do a redirection of traffic from port 1111 to 8000 by using "Socat" 
+Hence we can do a redirection of traffic from port 1111 to 8000 by using "socat" 
 
 ```
 socat -v tcp-listen:1111;reuseaddr tcp:localhost:8000
