@@ -158,7 +158,7 @@ and hence we are able to get the private key, saving and naming it as "id_rsa"
 
 ![](/assets/img/tiny/private_key.png)
 
-granting "id_rsa" with 600 permission and we connect user vic by using "id_rsa" via ssh
+Granting "id_rsa" with 600 permission and we connect user vic by using "id_rsa" via ssh
 
 ```shell
 chmod 600 id_rsa
