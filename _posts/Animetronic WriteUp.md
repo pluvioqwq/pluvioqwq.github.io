@@ -113,13 +113,14 @@ Then we can do a smart assumption that this might be a directory.
 
 By accessing it:
 
-![[Note_img.png]]
+![](/assets/img/animetronic/Note_img.png)
 
 Then:
 
-![[personal_info.png]]
+![](/assets/img/animetronic/personal_info.png)
 
-We can make another guess that this might be for ssh. Hence what we need to do now is to cupp to create a dictionary, we can consider using ncrack to get the ssh user and password.
+
+We can make another guess that this might be for ssh. Hence what we need to do now is to use cupp to create a dictionary, then we can consider using ncrack to get the ssh user and password.
 
 ssh user & password:
 
