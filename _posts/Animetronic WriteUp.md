@@ -1,5 +1,5 @@
 ---
-title: Animetronic - HackMyVM Writeup
+title: Animetronic-Writeup
 date: 2024-03-23
 categories:
   - Writeups
