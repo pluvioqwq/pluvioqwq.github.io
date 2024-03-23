@@ -51,7 +51,6 @@ HOP RTT      ADDRESS
 1   17.72 ms animetronic (192.168.1.76)
 ```
 
-We can see that 80, 22 and 8888 ports are opened
 
 # Url Enumeration
 
