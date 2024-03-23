@@ -57,12 +57,12 @@ echo "192.168.1.63 christmas.hmv" >> /etc/hosts
 
 We can see there is a upload function which we can possibly use.
 
-![](/assets/img/XMAS/Upload_Function.png)
+![](assets/img/XMAS/Upload_Function.png)
 As we can see, we can only upload pdf files.
 
 With uploading "php-reverse-shell.pdf" first, we can then use burp to intercept the request and change it into "php-reverse-shell.php". 
 
-![](/assets/img/XMAS/Burp_upload.png)
+![](assets/img/XMAS/Burp_upload.png)
 
 ```shell
 nc -lnvp 4444
@@ -73,7 +73,7 @@ nc -lnvp 4444
 By using "linpeas.sh", we can discover some interesting files.
 
 
-![](/assets/img/XMAS/Linpeas_result.png)
+![](assets/img/XMAS/Linpeas_result.png)
 
 ```shell
 drwxr-xr-x  2 root root 4096 Nov 20 18:39 NiceOrNaughty
