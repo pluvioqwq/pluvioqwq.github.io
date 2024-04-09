@@ -112,11 +112,11 @@ Then we can do a smart assumption that this might be a directory.
 
 By accessing it:
 
-![](assets/img/animetronic/Note_img.png)
+![](/assets/img/animetronic/Note_img.png)
 
 Then:
 
-![](assets/img/animetronic/personal_info.png)
+![](/assets/img/animetronic/personal_info.png)
 
 
 We can make another guess that this might be for ssh. Hence what we need to do now is to use cupp to create a dictionary, then we can consider using ncrack to get the ssh user and password.
