@@ -92,7 +92,7 @@ cp php-reverse-shell.php shell1.jpg
 
 once we uploaded it, we use burp to change into 'shell1.phtml', which can be successfully uploaded.
 
-![[upload_file.png]]
+![](/assets/img/Liceo/upload_file.png)
 
 Then we access '/uploads/shell1.phtml' and then we can get a low shell.
 
