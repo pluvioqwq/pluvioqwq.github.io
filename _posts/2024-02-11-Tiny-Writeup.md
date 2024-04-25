@@ -7,6 +7,7 @@ tags:
   - Sql_injection
   - Wordpress
   - Privilege_Escalation
+  - HackMyVm
 ---
 
 # Arp-scan 
