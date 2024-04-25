@@ -110,7 +110,7 @@ The first number that parseInt() will parse will be 1 and end before the "e" cha
 
 As such, we can use this and post a data that is more than 6 decimal places.
 
-![[Pasted image 20240421151522.png]]
+![](/assets/img/grey the cat flag/flag.png)
 
 By doing it, we can find the value changing, and by doing it twice, we are able to make the score more than 1.
 
