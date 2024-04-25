@@ -1,3 +1,11 @@
+---
+title: Greyctf Survey Writeup
+date: 2024-04-25
+categories:
+  - Writeups
+tags:
+  - Grey cat the flag
+---
 
 # Intro
 
