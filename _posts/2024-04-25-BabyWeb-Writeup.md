@@ -1,4 +1,11 @@
-
+---
+title: BabyWeb Writeup
+date: 2024-04-25
+categories:
+  - Writeups
+tags:
+  - Grey cat the flag
+---
 # 0x01
 
 ### Source code:
