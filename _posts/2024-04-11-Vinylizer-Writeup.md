@@ -1,5 +1,5 @@
 ---
-title: Vinylizer - HackMyVM Writeup
+title: Vinylizer Writeup
 date: 2024-04-11
 categories:
   - Writeups
@@ -8,6 +8,7 @@ tags:
   - Sql_injection
   - Enumeration
   - PrivEsc
+  - HackMyVm
 ---
 
 
