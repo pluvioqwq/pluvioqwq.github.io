@@ -1,5 +1,5 @@
 ---
-title: Liceo - Writeup
+title: Liceo Writeup
 date: 2024-04-10
 categories:
   - Writeups
@@ -9,6 +9,7 @@ tags:
   - PrivEsc
   - Ftp
   - File Upload
+  - HackMyVm
 ---
 
 # Arp-scan 
