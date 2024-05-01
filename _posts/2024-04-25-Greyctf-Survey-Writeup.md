@@ -9,7 +9,7 @@ tags:
 
 # Intro
 
-- Recently I have participated in Grey Cat The Flag as a member in F1ag dot txt, and I counter some questions which are quite interesting. One of them is greyctf survey
+- Recently I have participated in Grey Cat The Flag as a member in F1ag dot txt, and I encountered some questions which are quite interesting. One of them is greyctf survey
 
 # 0x01
 
