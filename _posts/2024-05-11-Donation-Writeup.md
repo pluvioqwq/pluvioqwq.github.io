@@ -1,4 +1,11 @@
-
+---
+title: Donation Writeup
+date: 2024-05-11
+categories:
+  - Writeups
+tags:
+  - UMDCTF
+---
 # Intro
 
 - Recently, I have participated in UMDCTF as member of F1ag dot txt, together with 1 other teammate. Due to time constraints, we only managed to solve few of them
