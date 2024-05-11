@@ -1,5 +1,5 @@
 ---
-title: BabyWeb Writeup
+title: Baby Web Writeup
 date: 2024-05-11
 categories:
   - Writeups
