@@ -67,7 +67,7 @@ Tips:
 1. If the string start with a "0x", Javascript will interpret it as a hexadecimal number
 2. If the typeof value is not a string, Javascript will implicitly call the `toString()` to convert it into a string by default.
 
-The parseInt() will starts parsing from the beginning of the string until it encounters a non-numeric character or reaches the end of the string with whitespace ignoring . If the first non-whitespace character is not numeric character, plus or negative. It will return a value of NaN.
+The `parseInt()` will starts parsing from the beginning of the string until it encounters a non-numeric character or reaches the end of the string with whitespace ignoring . If the first non-whitespace character is not numeric character, plus or negative. It will return a value of NaN.
 
 For instance:
 
@@ -98,7 +98,7 @@ console.log(0.0000001)//1e-7
 ```
 
 
-Therefore, back to the parseInt() function again, once we post a value that exceeds 6 decimals places, parseInt() lt will only parse the part of the string before the "e" character:
+Therefore, back to the `parseInt()` function again, once we post a value that exceeds 6 decimals places, `parseInt()` lt will only parse the part of the string before the "e" character:
 
 For instance:
 
@@ -106,7 +106,7 @@ For instance:
 0.0000001 -> 1e-7
 ```
 
-The first number that parseInt() will parse will be 1 and end before the "e" character
+The first number that `parseInt()` will parse will be 1 and end before the "e" character
 
 As such, we can use this and post a data that is more than 6 decimal places.
 
