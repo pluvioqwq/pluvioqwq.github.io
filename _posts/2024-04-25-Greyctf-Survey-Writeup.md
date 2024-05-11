@@ -71,7 +71,7 @@ The parseInt() will starts parsing from the beginning of the string until it enc
 
 For instance:
 
-```javascript:
+```javascript
 console.log(parseInt('123abc'))//123
 console.log(parseInt(' 1'))//1
 console.log(parseInt('a'))//NaN
