@@ -1,4 +1,11 @@
-
+---
+title: Donation2 Writeup
+date: 2024-05-11
+categories:
+  - Writeups
+tags:
+  - UMDCTF
+---
 # 0x01
 
 #### Http parameter pollution
